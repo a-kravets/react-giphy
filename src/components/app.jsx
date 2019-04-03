@@ -19,7 +19,7 @@ class App extends Component {
   }
 
   search = (query) => {
-    giphy('yj5WedHgKD3uSBYLkbUCn2j6N0AAChm2').search({
+    giphy(this.API_KEY).search({
       q: query,
       rating: 'g',
       limit: 10

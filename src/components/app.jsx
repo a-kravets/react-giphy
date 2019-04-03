@@ -9,7 +9,7 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    const API_KEY = process.env.GIPHY_API;
+    const API_KEY = process.env.GIPHY_API_KEY;
 
     this.state = {
       gifs: [],

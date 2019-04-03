@@ -15,9 +15,10 @@ class App extends Component {
       gifs: [],
       selectedGifId: "1dMPcTP8TdZ1mMO48C"
     }
-    this.search('mtv')
+    this.search('mtv') // Predefined query for search results
   }
 
+  // Calling Giphy API
   search = (query) => {
     giphy(this.API_KEY).search({
       q: query,
@@ -30,6 +31,7 @@ class App extends Component {
     });
     }
 
+  // Selecting gif by clicking on it and iinserting to the main placeholder
   selectGif = (id) => {
     this.setState({ selectedGifId: id })
   }

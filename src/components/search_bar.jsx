@@ -10,11 +10,13 @@ class SearchBar extends Component {
     };
   }
 
+  // Updating gif-list dependig on search query
   handleUpdate = (event) => {
   // console.log(event.target.value);
   this.props.search(event.target.value)
   }
 
+  // handling mouse over the search bar
   handleFocus = () => {
   console.log('sas');
   this.setState({focused: !this.state.focused})

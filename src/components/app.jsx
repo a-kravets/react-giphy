@@ -15,7 +15,7 @@ class App extends Component {
       gifs: [],
       selectedGifId: "1dMPcTP8TdZ1mMO48C"
     }
-    // this.search('pamela')
+    this.search('mtv')
   }
 
   search = (query) => {
